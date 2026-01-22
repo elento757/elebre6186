@@ -8,7 +8,7 @@
     <meta name="author" content="Elento Brent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elento Brent's Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://github.com/elento757/elebre6186/blob/main/styles.css">
 </head>
 
 <body>
