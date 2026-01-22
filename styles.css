@@ -1,75 +1,98 @@
-/* ===== Global Styles ===== */
+/* Base styles */
 body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #000000, #1a0000);
-    color: #f2f2f2;
+    font-family: Arial, sans-serif;
 }
 
-/* ===== Header ===== */
-header {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: #b30000;
-    color: #ffffff;
-}
-
-header h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: 0;
-}
-
-/* ===== Navigation Menu ===== */
-nav ul {
-    list-style-type: none;      /* Remove bullets */
-    padding: 0;
-    margin: 0;
-    display: flex;              /* Horizontal layout */
+/* Navigation Flexbox */
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 1rem;
     justify-content: center;
-    background-color: #000000;
 }
 
-nav ul li {
-    margin: 0 15px;
+/* Main Content Flexbox */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-nav ul li a {
-    display: block;
-    padding: 12px 18px;
-    color: #ff3333;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
+/* Contact Form Flexbox */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+/* Form groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+/* Input & textarea styling */
+input,
+textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effects */
+input:focus,
+textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+/* Submit button */
+button[type="submit"] {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /* Hover effect */
-nav ul li a:hover {
-    background-color: #ff3333;
-    color: #000000;
-    border-radius: 5px;
+button[type="submit"]:hover {
+    background-color: #005fa3;
 }
 
-/* ===== Main Sections ===== */
-section {
-    margin: 30px;
-    padding: 25px;
-    background-color: #111111;
-    border-left: 5px solid #b30000;
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
-    border-radius: 6px;
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+/* Phone */
+@media (min-width: 320px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-section h2 {
-    color: #ff4d4d;
+/* Tablet */
+@media (min-width: 768px) {
+    .nav-menu {
+        flex-direction: row;
+    }
 }
 
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    font-size: 0.85em;
-    padding: 15px;
-    background-color: #000000;
-    color: #cccccc;
+/* Desktop */
+@media (min-width: 1024px) {
+    .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
+
