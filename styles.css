@@ -1,0 +1,75 @@
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #000000, #1a0000);
+    color: #f2f2f2;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #b30000;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ===== Navigation Menu ===== */
+nav ul {
+    list-style-type: none;      /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;              /* Horizontal layout */
+    justify-content: center;
+    background-color: #000000;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 18px;
+    color: #ff3333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #ff3333;
+    color: #000000;
+    border-radius: 5px;
+}
+
+/* ===== Main Sections ===== */
+section {
+    margin: 30px;
+    padding: 25px;
+    background-color: #111111;
+    border-left: 5px solid #b30000;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+section h2 {
+    color: #ff4d4d;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    padding: 15px;
+    background-color: #000000;
+    color: #cccccc;
+}
