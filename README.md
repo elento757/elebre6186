@@ -8,6 +8,7 @@
     <meta name="author" content="Elento Brent">
     <meta name="viewport" content="width=device-width, initial-scale=1.o">
     <title>Elento Brent's Webpage</title>
+    <link href="styles.css" rel="stylesheet" /> 
 </head>
 
 <body>
