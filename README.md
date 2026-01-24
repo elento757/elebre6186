@@ -1,4 +1,4 @@
-# elebre6186
+<!-- elebre6186 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +17,7 @@
     <h1>Welcome to Elento's World</h1>
     <h2>COWBOYS NATION!!!</h2>
 
-   
-<nav>
+ <nav>
         <ul class="nav-menu">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -29,49 +28,47 @@
 
 <!-- Main Content Flexbox -->
 <main class="main-content">
-  <section id="about">
+
+<section id="about">
         <h2>About</h2>
         <p>This section provides information about the purpose of the webpage and the author.</p>
     </section>
+
  <section id="projects">
         <h2>Projects</h2>
-        <p>Here you can find details about projects completed by the author.</p>
-    </section>
- <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
 
-  <!-- Contact Form Flexbox -->
- <form class="contact-form">
+  <table>
+            <caption>Sample Projects</caption>
 
- <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+  <colgroup>
+                <col style="background-color: #f2f2f2;">
+                <col>
+                <col style="background-color: #f2f2f2;">
+            </colgroup>
 
- <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+   <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+    <tbody>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>A personal website showcasing my skills, projects, and contact information.</td>
+                    <td>
+                        <img src="placeholder.png" alt="Portfolio project image" width="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Storefront Page</td>
+                    <td>A sample online storefront built using HTML and CSS with Flexbox layout.</td>
+                    <td>
+                        <img src="placeholder.png" alt="Storefront project image" width="100">
+                    </td>
+                </tr>
+            </tbody>
 
- <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject">
-            </div>
-
-  <div class="form-group">
-                <label for="message">Message</label>
-                
-
-<button type="submit">Send Message</button>
- </form>
- </section>
-
-</main>
-
-<footer>
-    <p>&copy; 2025 Elento Brent's Webpage. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+   <tfoot>
+                <tr>
