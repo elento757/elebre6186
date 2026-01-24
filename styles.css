@@ -1,10 +1,14 @@
+/* ========================= */
 /* Base styles */
+/* ========================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* ========================= */
 /* Navigation Flexbox */
+/* ========================= */
 .nav-menu {
     display: flex;
     flex-direction: row;
@@ -28,7 +32,9 @@ body {
     border-radius: 4px;
 }
 
+/* ========================= */
 /* Main Content Flexbox */
+/* ========================= */
 .main-content {
     display: flex;
     flex-direction: column;
@@ -36,17 +42,18 @@ body {
     padding: 2rem;
 }
 
-/* Main content sections */
+/* Main content section interactivity */
 .main-content section {
     transition: transform 0.3s ease;
 }
 
-/* Zoom in on hover */
 .main-content section:hover {
     transform: scale(1.02);
 }
 
+/* ========================= */
 /* Contact Form Flexbox */
+/* ========================= */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -61,7 +68,9 @@ body {
     gap: 0.25rem;
 }
 
-/* Input & textarea styling */
+/* ========================= */
+/* Input & Textarea Styling */
+/* ========================= */
 input,
 textarea {
     padding: 0.5rem;
@@ -70,14 +79,18 @@ textarea {
     transition: border-color 0.3s ease;
 }
 
-/* Focus effects */
+/* Focus & hover effects */
 input:focus,
-textarea:focus {
+textarea:focus,
+input:hover,
+textarea:hover {
     border-color: #0077cc;
     outline: none;
 }
 
-/* Submit button */
+/* ========================= */
+/* Submit Button */
+/* ========================= */
 button[type="submit"] {
     padding: 0.75rem;
     border: none;
@@ -88,15 +101,15 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect */
-button[type="submit"]:hover {
+/* Hover & focus effect */
+button[type="submit"]:hover,
+button[type="submit"]:focus {
     background-color: #005fa3;
 }
 
 /* ========================= */
 /* Table Styling */
 /* ========================= */
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -133,26 +146,6 @@ tfoot {
 @media (min-width: 320px) {
     .nav-menu {
         flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-    .nav-menu {
-        flex-direction: row;
-    }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-    .main-content {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
-
-    padding: 0.5rem 1rem;
-    transition: b
+        align-items: cen
 
 
