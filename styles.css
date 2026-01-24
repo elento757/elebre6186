@@ -14,85 +14,11 @@ body {
     justify-content: center;
 }
 
-/* Main Content Flexbox */
-.main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-}
+/* Navigation links */
+.nav-menu a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    transition: b
 
-/* Contact Form Flexbox */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 500px;
-}
-
-/* Form groups */
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-/* Input & textarea styling */
-input,
-textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-}
-
-/* Focus effects */
-input:focus,
-textarea:focus {
-    border-color: #0077cc;
-    outline: none;
-}
-
-/* Submit button */
-button[type="submit"] {
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #0077cc;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover effect */
-button[type="submit"]:hover {
-    background-color: #005fa3;
-}
-
-/* ========================= */
-/* Responsive Design */
-/* ========================= */
-
-/* Phone */
-@media (min-width: 320px) {
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-    .nav-menu {
-        flex-direction: row;
-    }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-    .main-content {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
 
